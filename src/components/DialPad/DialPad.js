@@ -67,10 +67,7 @@ function DialPad(props) {
                     <div id="button-call" onClick={GoToCallSession}>
                         <i className="fa fa-phone"></i>
                     </div>
-                    <div className="hide" id="hangup">
-                        <i className="fa fa-phone"></i>
-                    </div>
-                    <i className="fa fa-times dig" onClick={DeleteNumber}></i>
+                    <i className="fa fa-times delete" onClick={DeleteNumber}></i>
                 </div>
             </form>
         </div>

@@ -53,12 +53,13 @@ function CallSession(props) {
             session.on("failed", function (e) {
                 setCallStatus('call failed with cause: ' + e.cause);
             });
-        })
+        });
+
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])
 
     const HangUp = () => {
         ua.current.terminateSessions();
-        SendCallogDataToServer();
     }
 
     const SendCallogDataToServer = async () => {

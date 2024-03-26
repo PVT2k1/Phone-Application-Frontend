@@ -13,3 +13,18 @@
     margin-top: 100px;
     margin-bottom: 150px;
 }
+
+#hangup {
+    display: inline-block;
+    background-color: #ec2f0e;
+    padding: 4px 30px;
+    margin: 10px 115px;
+    color: white;
+    border-radius: 4px;
+    float: left;
+    cursor: pointer;
+}
+
+#hangup:hover {
+    background-color: #ec6c55;
+}
