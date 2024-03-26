@@ -1,0 +1,107 @@
+body {
+    background-color: #1d77c0;
+}
+
+.row {
+    margin: 0 auto;
+    width: 280px;
+    clear: both;
+    text-align: center;
+}
+
+.digit {
+    float: left;
+    padding: 10px 30px;
+    width: 30px;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.digit:active {
+    background-color: #445c8a;
+}
+
+.sub {
+    font-size: 0.8rem;
+    color: rgb(92, 90, 90);
+}
+
+.dig {
+    float: left;
+    padding: 4px 30px;
+    margin: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: gray;
+}
+
+.dig:hover {
+    background-color: rgb(163, 163, 158);
+}
+
+.container {
+    background-color: white;
+    width: 320px;
+    padding: 20px;
+    margin: 30px auto;
+    height: 420px;
+    text-align: center;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.botrow {
+    margin: 0 auto;
+    width: 280px;
+    clear: both;
+    text-align: center;
+}
+
+#button-call {
+    display: inline-block;
+    background-color: #66bb6a;
+    padding: 4px 30px;
+    margin: 10px;
+    color: white;
+    border-radius: 4px;
+    float: left;
+    cursor: pointer;
+}
+
+#button-call:hover {
+    background-color: #81c784;
+}
+
+#hangup {
+    display: inline-block;
+    background-color: #ec2f0e;
+    padding: 4px 30px;
+    margin: 10px;
+    color: white;
+    border-radius: 4px;
+    float: left;
+    cursor: pointer;
+}
+
+#hangup:hover {
+    background-color: #ec6c55;
+}
+
+#hangup-incoming{
+    display: inline-block;
+    background-color: #ec2f0e;
+    padding: 4px 30px;
+    margin: 10px;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#hangup-incoming:hover {
+    background-color: #ec6c55;
+}
+
+.hide {
+    position: absolute !important;
+    top: -9999px !important;
+    left: -9999px !important;
+}

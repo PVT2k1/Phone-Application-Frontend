@@ -1,0 +1,15 @@
+.container-call-session {
+    background-color: rgb(15, 22, 112);
+    width: 320px;
+    padding: 20px;
+    margin: 30px auto;
+    height: 420px;
+    text-align: center;
+    color: aliceblue;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.call-status {
+    margin-top: 100px;
+    margin-bottom: 150px;
+}
