@@ -1,4 +1,3 @@
-import './App.css';
 import DialPad from './components/DialPad/DialPad';
 import CallogHistory from './components/CallogHistory/CallogHistory';
 import CallSession from './components/CallSession/CallSession';
