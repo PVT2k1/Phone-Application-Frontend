@@ -1,12 +1,16 @@
 ## Steps to run frontend:
 
 ### Step 1:
+Dowload node.js from link: https://nodejs.org/en/download
+I use version 20.11.1
+
+### Step 2:
 In the project directory, you run command
 #### `npm install`
 This command will install all dependencies in package.json.
 It will create folder 'node_modules' and file 'package-lock.json'
 
-### Step 2:
+### Step 3:
 Run command:
 #### `npm start`
 After running successfully, open [http://localhost:3000](http://localhost:3000) to view it in your browser. (I use Microsoft Edge browser)
