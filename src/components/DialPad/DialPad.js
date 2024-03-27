@@ -8,7 +8,10 @@ function DialPad(props) {
     let history = useHistory();
 
     const AddNumber = (e) => {
-        setPhoneNumber(phoneNumberInput + e.target.innerHTML.replace(/\D/g, ""));
+        if (e.target.innerHTML.includes('*') || e.target.innerHTML.includes('#'))
+            setPhoneNumber(phoneNumberInput + e.target.innerHTML);
+        else
+            setPhoneNumber(phoneNumberInput + e.target.innerHTML.replace(/\D/g, ""));
     }
 
     const DeleteNumber = () => {
@@ -59,9 +62,9 @@ function DialPad(props) {
                     </div>
                 </div>
                 <div className="row" onClick={AddNumber}>
-                    <div className="digit">* </div>
-                    <div className="digit">0 </div>
-                    <div className="digit"># </div>
+                    <div className="digit">*</div>
+                    <div className="digit">0</div>
+                    <div className="digit">#</div>
                 </div>
                 <div className="botrow">
                     <div id="button-call" onClick={GoToCallSession}>
