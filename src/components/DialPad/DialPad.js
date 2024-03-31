@@ -28,51 +28,49 @@ function DialPad(props) {
 
     return (
         <div className="container">
-            <form name="input">
-                <input type="text" value={phoneNumberInput}/>
-                <div className="row" onClick={AddNumber}>
-                    <div className="digit">1</div>
-                    <div className="digit">2
-                        <div className="sub">ABC</div>
-                    </div>
-                    <div className="digit">3
-                        <div className="sub">DEF</div>
-                    </div>
+            <input type="text" value={phoneNumberInput} />
+            <div className="row" onClick={AddNumber}>
+                <div className="digit">1</div>
+                <div className="digit">2
+                    <div className="sub">ABC</div>
                 </div>
-                <div className="row" onClick={AddNumber}>
-                    <div className="digit">4
-                        <div className="sub">GHI</div>
-                    </div>
-                    <div className="digit">5
-                        <div className="sub">JKL</div>
-                    </div>
-                    <div className="digit">6
-                        <div className="sub">MNO</div>
-                    </div>
+                <div className="digit">3
+                    <div className="sub">DEF</div>
                 </div>
-                <div className="row" onClick={AddNumber}>
-                    <div className="digit">7
-                        <div className="sub">PQRS</div>
-                    </div>
-                    <div className="digit">8
-                        <div className="sub">TUV</div>
-                    </div>
-                    <div className="digit">9
-                        <div className="sub">WXYZ</div>
-                    </div>
+            </div>
+            <div className="row" onClick={AddNumber}>
+                <div className="digit">4
+                    <div className="sub">GHI</div>
                 </div>
-                <div className="row" onClick={AddNumber}>
-                    <div className="digit">*</div>
-                    <div className="digit">0</div>
-                    <div className="digit">#</div>
+                <div className="digit">5
+                    <div className="sub">JKL</div>
                 </div>
-                <div className="botrow">
-                    <div id="button-call" onClick={GoToCallSession}>
-                        <i className="fa fa-phone"></i>
-                    </div>
-                    <i className="fa fa-times delete" onClick={DeleteNumber}></i>
+                <div className="digit">6
+                    <div className="sub">MNO</div>
                 </div>
-            </form>
+            </div>
+            <div className="row" onClick={AddNumber}>
+                <div className="digit">7
+                    <div className="sub">PQRS</div>
+                </div>
+                <div className="digit">8
+                    <div className="sub">TUV</div>
+                </div>
+                <div className="digit">9
+                    <div className="sub">WXYZ</div>
+                </div>
+            </div>
+            <div className="row" onClick={AddNumber}>
+                <div className="digit">*</div>
+                <div className="digit">0</div>
+                <div className="digit">#</div>
+            </div>
+            <div className="botrow">
+                <div id="button-call" onClick={GoToCallSession}>
+                    <i className="fa fa-phone"></i>
+                </div>
+                <i className="fa fa-times delete" onClick={DeleteNumber}></i>
+            </div>
         </div>
     );
 }
